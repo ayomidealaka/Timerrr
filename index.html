@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Timerrr</title>
+  </head>
+  <body>
+    <!-- Toggle button for Light/Dark Mode. -->
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="slider round"></div>
+      </label>
+    </div>
+
+    <!-- Main Div -->
+    <div class="main-timer-div">
+      <form name="userValue">
+        <input type="text" name="userMinute" placeholder="Enter Minutes..." />
+      </form>
+      <h1 class="main-timer">0:00</h1>
+      <p class="return-time"></p>
+      <button class="btn">Cancel</button>
+      <footer class="mai">
+        <p>
+          <a href="https://github.com/ayomidealaka/Timerrr">View Source code</a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

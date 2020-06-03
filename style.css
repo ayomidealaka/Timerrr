@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-color: black;
+  --bg-color: #fff;
+  --border: solid 2px black;
+  --input-color: black;
+}
+
+[data-theme="dark"] {
+  --font-color: white;
+  --bg-color: black;
+  --border: solid 1px white;
+  --input-color: black;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+}
+
+.main-timer-div {
+  width: 50vw;
+  text-align: center;
+  padding: 2px;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: var(--bg-color);
+}
+
+.main-timer-div > h1 {
+  font-size: 110px;
+  /* margin: 0, auto;
+  width: 50vw; */
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  color: var(--font-color);
+}
+
+.main-timer-div > p {
+  font-size: 30px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: Bold;
+}
+
+form {
+  margin: auto;
+  width: 50vw;
+}
+form > p {
+  font-size: 30px;
+  margin-top: -70px;
+  font-family: "Poppins", sans-serif;
+}
+
+input {
+  align-items: center;
+  width: 200px;
+  height: 35px;
+  align-items: center;
+  text-align: center;
+  border: var(--border);
+  border-radius: 3px;
+  font-size: 20px;
+  color: var(--input-color);
+  margin: -100px;
+  font-weight: Bold;
+}
+
+.btn {
+  margin-top: 20px;
+  width: 90px;
+  height: 35px;
+  border: var(--border);
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  background: white;
+  display: none;
+}
+
+footer {
+  font-family: "Roboto Mono", monospace;
+  margin: auto;
+  width: 50vw;
+  position: absolute;
+  bottom: 0;
+  align-content: center;
+  padding-bottom: 10px;
+}
+
+footer a {
+  color: var(--font-color);
+}
+
+/* Slider */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+  /* margin-left: 93vw; */
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-size: 1rem;
+  width: 97vw;
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #1c1c1c;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-timer-div > h1 {
+    font-size: 70px;
+  }
+}
