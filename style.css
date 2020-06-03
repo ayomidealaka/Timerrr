@@ -8,6 +8,8 @@
   --bg-color: #fff;
   --border: solid 2px black;
   --input-color: black;
+  --btn-color: black;
+  --btn-text: white;
 }
 
 [data-theme="dark"] {
@@ -15,6 +17,8 @@
   --bg-color: black;
   --border: solid 1px white;
   --input-color: black;
+  --btn-color: white;
+  --btn-text: black;
 }
 
 body {
@@ -75,12 +79,13 @@ input {
   margin-top: 20px;
   width: 90px;
   height: 35px;
-  border: var(--border);
   border-radius: 3px;
   font-size: 15px;
+  color: var(--btn-text);
+  border: none;
   font-weight: bold;
   cursor: pointer;
-  background: white;
+  background: var(--btn-color);
   display: none;
 }
 
